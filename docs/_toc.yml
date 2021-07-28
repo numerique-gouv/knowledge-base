@@ -1,4 +1,5 @@
-file: index
+format: jb-article
+root: index
 sections:
 - file: lab_ia/index
   sections:
@@ -40,3 +41,15 @@ sections:
     - file: piaf/retriever/complementarity_dense_sparse_v2
     - file: piaf/retriever/dense_vs_sparse_qualitative
     - file: piaf/retriever/score_threshold_sparse_retriever
+- file: OCR-Xtract/index
+  sections:
+  - file: OCR-Xtract/howtos/index
+    sections:
+    - file: OCR-Xtract/howtos/fiche_produit
+    - file: OCR-Xtract/howtos/benchmark
+  - file: OCR-Xtract/annotation/index
+    sections:
+    - file: OCR-Xtract/annotation/annotation
+  - file: OCR-Xtract/POC_DossierFacile/index
+    sections:
+    - file: OCR-Xtract/POC_DossierFacile/poc_cnijupyter-book build --all docs/
