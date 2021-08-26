@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -78,7 +78,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
@@ -432,6 +432,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remarque-sur-l-annotation-des-cni">
+   Remarque sur l’annotation des CNI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tips-pour-l-annotation-avec-l-interface-label-studio">
+   Tips pour l’annotation avec l’interface Label Studio
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -442,6 +460,20 @@
                 
   <div class="section" id="annotation">
 <h1>Annotation<a class="headerlink" href="#annotation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="remarque-sur-l-annotation-des-cni">
+<h2>Remarque sur l’annotation des CNI<a class="headerlink" href="#remarque-sur-l-annotation-des-cni" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Parfois les noms, prenoms, etc sont légèrement décalés par rapports aux mots “nom”, “prenom”, etc (défaut d’impression des cartes)</p></li>
+<li><p>Parfois les dates de naissances sont splitées en 2 box (une pour JJMM et une pour AAAA)</p></li>
+</ul>
+</div>
+<div class="section" id="tips-pour-l-annotation-avec-l-interface-label-studio">
+<h2>Tips pour l’annotation avec l’interface Label Studio<a class="headerlink" href="#tips-pour-l-annotation-avec-l-interface-label-studio" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>utuliser la fonctionnalité “Label All tasks” pour que les tasks se succèdent</p></li>
+<li><p>pour utiliser les racourcis claviers des labels (à chaque label correspond un numéro de 1 à n), utiliser les chiffres du haut du clavier sans mettre la touche MAJ</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -467,12 +499,32 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">L’annotation</a>
-    <a class='right-next' id="next-link" href="../howtos/index.html" title="next page">L’outil OCR-Xtract</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="index.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">L’annotation</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../howtos/index.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">L’outil OCR-Xtract</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
