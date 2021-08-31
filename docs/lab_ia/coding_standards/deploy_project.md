@@ -142,6 +142,12 @@ See [here](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_
 2. Sometimes you need to open a port with `iptables`. This is not ideal because you don't want to be opening ports.
 3. You need to add the certificates info to deal with `https` instead of `http`. This can be done automatically with certbot.
 
+#### Streamlit
+Seems like you need some adjustments to deploy streamlit on Nginx. These are quickfix that should be later refined. Please refer to [this link](https://docs.streamlit.io/en/stable/troubleshooting/not-loading.html) for more information. 
+
+1. Inside the `.conf` add `proxy_http_version 1.1;`
+2. Run your application with the following : `[ "streamlit", "run", "your_app.py", "--server.enableCORS=false", "--server.enableXsrfProtection=false","--server.enableWebsocketCompression=false" ]`
+
 ### Useful commands
 
 1. Check docker logs
