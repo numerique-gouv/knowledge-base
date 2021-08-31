@@ -500,6 +500,13 @@
     <a class="reference internal nav-link" href="#common-problems">
      Common problems
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#streamlit">
+       Streamlit
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#useful-commands">
@@ -648,6 +655,14 @@ proxy_set_header X-Forwarded-For <span class="nv">$proxy_add_x_forwarded_for</sp
 <li><p>Sometimes you need to open a port with <code class="docutils literal notranslate"><span class="pre">iptables</span></code>. This is not ideal because you don’t want to be opening ports.</p></li>
 <li><p>You need to add the certificates info to deal with <code class="docutils literal notranslate"><span class="pre">https</span></code> instead of <code class="docutils literal notranslate"><span class="pre">http</span></code>. This can be done automatically with certbot.</p></li>
 </ol>
+<div class="section" id="streamlit">
+<h4>Streamlit<a class="headerlink" href="#streamlit" title="Permalink to this headline">¶</a></h4>
+<p>Seems like you need some adjustments to deploy streamlit on Nginx. These are quickfix that should be later refined. Please refer to <a class="reference external" href="https://docs.streamlit.io/en/stable/troubleshooting/not-loading.html">this link</a> for more information.</p>
+<ol class="simple">
+<li><p>Inside the <code class="docutils literal notranslate"><span class="pre">.conf</span></code> add <code class="docutils literal notranslate"><span class="pre">proxy_http_version</span> <span class="pre">1.1;</span></code></p></li>
+<li><p>Run your application with the following : <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">&quot;streamlit&quot;,</span> <span class="pre">&quot;run&quot;,</span> <span class="pre">&quot;your_app.py&quot;,</span> <span class="pre">&quot;--server.enableCORS=false&quot;,</span> <span class="pre">&quot;--server.enableXsrfProtection=false&quot;,&quot;--server.enableWebsocketCompression=false&quot;</span> <span class="pre">]</span></code></p></li>
+</ol>
+</div>
 </div>
 <div class="section" id="useful-commands">
 <h3>Useful commands<a class="headerlink" href="#useful-commands" title="Permalink to this headline">¶</a></h3>
