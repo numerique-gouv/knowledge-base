@@ -12,7 +12,7 @@
 
 ## Tips pour l'annotation avec l'interface Label Studio 
 
-- utuliser la fonctionnalité "Label All tasks" pour que les documuments à annoter se succèdent lors de l'annotation
+- utuliser la fonctionnalité "Label All tasks" pour que les documents à annoter se succèdent lors de l'annotation
 - pour utiliser les racourcis claviers des labels (à chaque label correspond un numéro de 1 à n), utiliser les chiffres du haut du clavier sans mettre la touche MAJ
 
 
@@ -24,4 +24,4 @@
 - Dans la version gratuite, on peut ajouter des participants au projet en cliquant sur "LablelStudio" en haut à gauche puis sur "Organisation" puis sur 'Add people". Un lien est alors fourni que l'on envoyer pour inviter d'autres personnes à collaborer sur le projet
 - Les personnes invitées ont un accès complet à l'ensemble des projets de l'instance 
 - Il est possible de créer un nouveau lien en cliquand sur "Reset link". L'ancien lien ne sera alors plus valide. 
-- La liste des personnes ayant créé un compte est alors données sur la page "Organisation"
+- La liste des personnes ayant créé un compte est alors donnée sur la page "Organisation"
