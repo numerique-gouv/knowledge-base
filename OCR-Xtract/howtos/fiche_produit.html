@@ -482,6 +482,52 @@
   <a class="reference internal nav-link" href="#resultats">
    Résultats
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-1-documents-courts-au-format-relativement-homogenes-a-contenu-a-la-fois-textuel-et-graphique">
+     Type 1 : documents courts au format relativement homogènes, à contenu à la fois textuel et graphique
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#opportunites">
+       Opportunités
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#risques">
+       Risques
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exemples">
+       Exemples
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-2-documents-longs-a-contenu-majoritairement-textuel">
+     Type 2 : documents longs, à contenu majoritairement textuel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Opportunités
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Risques
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Exemples
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -547,7 +593,80 @@ Livrable : compréhension du contexte, recueil du besoin, irritants et personas<
 </div>
 <div class="section" id="resultats">
 <h2>Résultats<a class="headerlink" href="#resultats" title="Permalink to this headline">¶</a></h2>
-<p>To complete</p>
+<p>Deux typologies de besoin ressortent des cas d’usages qui nous ont été partagés.</p>
+<p>Un <strong>premier type</strong> de besoin est celui de traiter des documents courts, de contenu et de forme relativement homogènes, où la localisation du texte joue un rôle important pour la classification des différents types d’informations à extraire. C’est le cas pour le traitement des pièces d’identités (CNI, passeports, permis de conduire…), de documents de type bulletins de salaire, factures, de formulaires (Cerfa, déclarations sociales…).</p>
+<p>Un <strong>deuxième besoin</strong> concerne le traitement de documents textuels longs, de contenu et de forme hétérogènes, où le contenu textuel (vocabulaire, constructions syntaxiques, cooccurrences…) est plus important que la spatialisation du texte pour favoriser la reconnaissance.</p>
+<p>Détails des cas d’usage sur le airtable: <a class="reference external" href="https://airtable.com/appVQnWK0tWqr0As5/tblcniWxn6ohWUDRv/viwtCzZcM6h2IyVEW?blocks=hide">https://airtable.com/appVQnWK0tWqr0As5/tblcniWxn6ohWUDRv/viwtCzZcM6h2IyVEW?blocks=hide</a> . 20 cas d’usages identifiés (Open Lab + Autres cas d’usages recensés auparavant)</p>
+<div class="section" id="type-1-documents-courts-au-format-relativement-homogenes-a-contenu-a-la-fois-textuel-et-graphique">
+<h3>Type 1 : documents courts au format relativement homogènes, à contenu à la fois textuel et graphique<a class="headerlink" href="#type-1-documents-courts-au-format-relativement-homogenes-a-contenu-a-la-fois-textuel-et-graphique" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="opportunites">
+<h4>Opportunités<a class="headerlink" href="#opportunites" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Démarches administratives comportant une étape de vérification de documents administratifs inaccessibles par l’administratif via le DNLUF et les API internes</p></li>
+<li><p>Enquêtes administratives devant traîter des grands volumes de documents</p>
+<ul>
+<li><p>ex : factures provenant d’un grossiste agro-alimentaire</p></li>
+<li><p>ex : bilans sociaux</p></li>
+</ul>
+</li>
+<li><p>Dégager du temps d’agent/gestionnaire</p></li>
+<li><p>Documents relativement standardisés</p></li>
+<li><p>Les visas coûtent plus cher que le timbre fiscal demandé</p></li>
+</ul>
+</div>
+<div class="section" id="risques">
+<h4>Risques<a class="headerlink" href="#risques" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Continuer à faire de la retranscription manuelle si la solution n’est pas suffisamment convaincante</p></li>
+<li><p>Le traitement d’OCR et d’extratction intervient en début de workflow: une erreur à cette étape se répercute dans toute la suite du processus administration. La solution doit être robuste</p></li>
+</ul>
+</div>
+<div class="section" id="exemples">
+<h4>Exemples<a class="headerlink" href="#exemples" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>DossierFacile (pièces d’identité, bulletins de salaires)</p></li>
+<li><p>Audits (factures, bulletins de salaires)</p></li>
+<li><p>Bilans sociaux</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="type-2-documents-longs-a-contenu-majoritairement-textuel">
+<h3>Type 2 : documents longs, à contenu majoritairement textuel<a class="headerlink" href="#type-2-documents-longs-a-contenu-majoritairement-textuel" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id1">
+<h3>Opportunités<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>De nombreuses administrations possèdent un fond documentaire pouvant avoir un impact important sur la vie des citoyens</p>
+<ul>
+<li><p>la profondeur des catalogues font que des documents sont parfois des manuscrits</p></li>
+<li><p>certaines archives ne sont pas encore numérisées</p></li>
+</ul>
+</li>
+<li><p>Peut résoudre des problèmes humains plutôt qu’administratifs</p></li>
+<li><p>Point d’entrée pour un travail transversal et mutualisé en NLP</p></li>
+</ul>
+<div class="section" id="id2">
+<h4>Risques<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Dette de transparence et d’accès aux documents administratifs anciens</p></li>
+<li><p>Confidentialité et secrets</p></li>
+<li><p>Spécifités métiers</p>
+<ul>
+<li><p>Présence importante de tableaux</p></li>
+</ul>
+</li>
+<li><p>Besoin d’une couche forte d’anonymisation/pseudonymisation pour construire une offre ouverte ou en interface avec le grand public</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h4>Exemples<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Archives diverses</p></li>
+<li><p>Nantes métropole: délibérations</p></li>
+<li><p>Demandes d’agréments</p></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 
