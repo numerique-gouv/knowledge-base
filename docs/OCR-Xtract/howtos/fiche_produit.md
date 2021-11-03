@@ -37,6 +37,8 @@ Mesurer:
 ## Chronologie
 Étape 1 (juin - juillet) : interviews utilisateur
 Livrable : compréhension du contexte, recueil du besoin, irritants et personas
+Etape 2 (septembre-novembre): MVP pour les cas d'usage cartes d'identité et les bulletins de salaire
+Etape 3 (décembre-février): passage à l'échelle avec développment d'une API mise à disposition de nos primo-utilisateurs (DossierFacile et une seconde administration à déterminer)
 
 ## Résultats
 
