@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -33,17 +33,17 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -70,6 +70,10 @@
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="../../_static/logo.png" class="logo" alt="logo">
       
@@ -438,13 +442,23 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#remarque-sur-l-annotation-des-cni">
-   Remarque sur l’annotation des CNI
+  <a class="reference internal nav-link" href="#remarques-sur-l-annotation-des-cartes-nationales-d-identite">
+   Remarques sur l’annotation des cartes nationales d’identité
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remarques-sur-l-annotation-des-bulletins-de-salaire">
+   Remarques sur l’annotation des bulletins de salaire
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#tips-pour-l-annotation-avec-l-interface-label-studio">
    Tips pour l’annotation avec l’interface Label Studio
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creer-des-comptes-differents-lorsque-l-annotation-est-realisee-par-une-equipe-de-plusieurs-personnes">
+   Créer des comptes différents lorsque l’annotation est réalisée par une équipe de plusieurs personnes
   </a>
  </li>
 </ul>
@@ -458,20 +472,33 @@
         
               <div>
                 
-  <div class="section" id="annotation">
+  <div class="tex2jax_ignore mathjax_ignore section" id="annotation">
 <h1>Annotation<a class="headerlink" href="#annotation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="remarque-sur-l-annotation-des-cni">
-<h2>Remarque sur l’annotation des CNI<a class="headerlink" href="#remarque-sur-l-annotation-des-cni" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="remarques-sur-l-annotation-des-cartes-nationales-d-identite">
+<h2>Remarques sur l’annotation des cartes nationales d’identité<a class="headerlink" href="#remarques-sur-l-annotation-des-cartes-nationales-d-identite" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Parfois les noms, prenoms, etc sont légèrement décalés par rapports aux mots “nom”, “prenom”, etc (défaut d’impression des cartes)</p></li>
 <li><p>Parfois les dates de naissances sont splitées en 2 box (une pour JJMM et une pour AAAA)</p></li>
 </ul>
 </div>
+<div class="section" id="remarques-sur-l-annotation-des-bulletins-de-salaire">
+<h2>Remarques sur l’annotation des bulletins de salaire<a class="headerlink" href="#remarques-sur-l-annotation-des-bulletins-de-salaire" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Parfois les montants sont séparés en deux box, dans ce cas, tagguer les deux box avec le label “somme”</p></li>
+<li><p>Attention au cas où les décimales ne sont pas prises en compte, ce qui revient à multiplier le salaire par 10</p></li>
+</ul>
+</div>
 <div class="section" id="tips-pour-l-annotation-avec-l-interface-label-studio">
 <h2>Tips pour l’annotation avec l’interface Label Studio<a class="headerlink" href="#tips-pour-l-annotation-avec-l-interface-label-studio" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>utuliser la fonctionnalité “Label All tasks” pour que les tasks se succèdent</p></li>
+<li><p>utuliser la fonctionnalité “Label All tasks” pour que les documuments à annoter se succèdent lors de l’annotation</p></li>
 <li><p>pour utiliser les racourcis claviers des labels (à chaque label correspond un numéro de 1 à n), utiliser les chiffres du haut du clavier sans mettre la touche MAJ</p></li>
+</ul>
+</div>
+<div class="section" id="creer-des-comptes-differents-lorsque-l-annotation-est-realisee-par-une-equipe-de-plusieurs-personnes">
+<h2>Créer des comptes différents lorsque l’annotation est réalisée par une équipe de plusieurs personnes<a class="headerlink" href="#creer-des-comptes-differents-lorsque-l-annotation-est-realisee-par-une-equipe-de-plusieurs-personnes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Possibilité de rajouter des instructions de labellisation dans “Settings” puis “Instructions”</p></li>
 </ul>
 </div>
 </div>
@@ -528,7 +555,7 @@
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
